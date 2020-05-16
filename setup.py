@@ -7,7 +7,7 @@ requirements = []
 
 setup(
     name="hammerai",
-    version="0.0.1",
+    version="0.0.2",
     author="D-Bhatta",
     author_email="dbhatta1232@gmail.com",
     description="AI that can automate hammer usage in industrial robots",
@@ -18,6 +18,6 @@ setup(
     install_requires=requirements,
     classifiers=[
         "Programming Language :: Python :: 3.7",
-        "License :: OSI Approved :: GNU General Public License V3 (GPLv3",
+        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
     ],
 )
