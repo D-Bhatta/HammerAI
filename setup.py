@@ -7,7 +7,7 @@ requirements = []
 
 setup(
     name="hammerai",
-    version="0.0.2",
+    version="0.0.5",
     author="D-Bhatta",
     author_email="dbhatta1232@gmail.com",
     description="AI that can automate hammer usage in industrial robots",
@@ -21,3 +21,7 @@ setup(
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
     ],
 )
+
+""" Build:
+python setup.py sdist bdist_wheel
+twine upload -r testpypi dist/*"""
