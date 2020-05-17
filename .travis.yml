@@ -8,3 +8,5 @@ script:
  - black hammerai/
  - pytest
  - pytest --cov=hammerai
+after_success:
+  - coveralls
