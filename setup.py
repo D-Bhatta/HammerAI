@@ -23,5 +23,16 @@ setup(
 )
 
 """ Build:
+pip install -r requirements_dev.txt
+pip install -e .
+git checkout -b <branch-name>
+# Make changes
+pytest
+pytest --cov=hammerai
+# If tests pass, delete all build artefacts
 python setup.py sdist bdist_wheel
+git commit -a -m "message"
+git push origin <branch-name>
+# Create pull request on github
+# Merge PR
 twine upload -r testpypi dist/*"""
