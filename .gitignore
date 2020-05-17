@@ -27,7 +27,8 @@ share/python-wheels/
 *.egg
 MANIFEST
 hammeraienv/
-hammeraitestenv
+hammeraitestenv/
+.pypirc
 
 # PyInstaller
 #  Usually these files are written by a python script from a template

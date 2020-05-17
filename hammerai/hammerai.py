@@ -6,5 +6,7 @@ def hammer(object):
     returns:
         None
     """
+    if type(object) != str:
+        raise TypeError
 
-    print("I'll hammer an {object} someday.")
+    print("I'll hammer an {} someday.".format(object))
