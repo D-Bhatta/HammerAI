@@ -1,4 +1,18 @@
-from setuptools import setup, find_packages
+""" Build:
+pip install -r requirements_dev.txt
+pip install -e .
+git checkout -b <branch-name>
+# Make changes
+pytest
+pytest --cov=hammerai
+# If tests pass, delete all build artefacts
+python setup.py sdist bdist_wheel
+git commit -a -m "message"
+git push origin <branch-name>
+# Create pull request on github
+# Merge PR
+twine upload -r testpypi dist/*"""
+from setuptools import find_packages, setup
 
 with open("README.md", "r") as readme_file:
     readme = readme_file.read()
@@ -21,18 +35,3 @@ setup(
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
     ],
 )
-
-""" Build:
-pip install -r requirements_dev.txt
-pip install -e .
-git checkout -b <branch-name>
-# Make changes
-pytest
-pytest --cov=hammerai
-# If tests pass, delete all build artefacts
-python setup.py sdist bdist_wheel
-git commit -a -m "message"
-git push origin <branch-name>
-# Create pull request on github
-# Merge PR
-twine upload -r testpypi dist/*"""

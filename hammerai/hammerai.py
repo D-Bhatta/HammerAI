@@ -1,5 +1,5 @@
 def hammer(object):
-    """ 
+    """
     Print a line about hammering an object
     args:
         object (str): name of the object
